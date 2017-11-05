@@ -1,0 +1,11 @@
+<div>
+  <div ng-repeat="brandproducts in brandproduct | filter:{brand_id:bid}">
+  	<td>Product Name :	{{brandproducts.product_name}}</td>
+  	  	<td>Price :	{{brandproducts.price}}</td>
+  	       <td>Dimensions :	{{brandproducts.dimensions}}</td>
+  	           <button ng-click = "add()">ADD TO WISHLIST</button>
+  	    <img src={{brandproducts.image_path}} style ="width:100%;padding-top:20px;padding-right:30px;height:100%;"/>	
+   </div>
+</div>
+       	 
+       	 

@@ -1,0 +1,10 @@
+<div>
+  <div ng-repeat="brandtable in brand">
+     <div  ng-click="getProductById(brandtable.brand_id)" >
+     	<div class="thumbnail">
+			{{brandtable.brand_name}}
+          <img src={{brandtable.image_path}} style ="width:100%;padding-top:20px;padding-right:30px;height:100%;"/>
+      </div>
+    </div> 
+  </div>
+</div>

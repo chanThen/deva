@@ -1,0 +1,11 @@
+<div class = "productposition">
+  <div ng-repeat="products in product | filter:{category_id:pid}">
+  	<td>Product Name :	{{products.product_name}}</td>
+  	  	<td>Price :	{{products.price}}</td>
+  	       <td>Dimensions :	{{products.dimensions}}</td>
+  	       <button ng-click = "add(products.product_id)" class="btn btn-success">ADD TO WISHLIST</button>
+  	    <img src={{products.image_path}} style ="width:100%;padding-top:20px;padding-right:30px;height:100%;"/>	
+   </div>
+</div>
+       	 
+       	  

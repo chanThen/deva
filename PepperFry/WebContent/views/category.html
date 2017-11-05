@@ -1,0 +1,11 @@
+<div class = "categoryposition">
+  <div ng-repeat="categorytable in category">
+     <div  ng-click="getproductListById(categorytable.category_id)" >
+     	<div class="thumbnail">
+		  {{categorytable.category_name}}
+          <img src={{categorytable.image_path}} style ="width:100%;padding-top:20px;padding-right:30px;height:100%;"/>
+      </div>
+    </div> 
+   </div>
+</div>
+       	 
